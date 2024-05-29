@@ -5,8 +5,8 @@ export default function Summary() {
   return (
     <Container sx={{
       backgroundColor: 'green',
+      height: '20%',
     }}>
-     
     </Container>
   )
 }

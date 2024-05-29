@@ -21,8 +21,9 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<Root />} errorElement={<ErrorPage />} />
       <Route path="order" element={<Order />} errorElement={<ErrorPage />} >
-        {/* <Route path="menu" element={<Menu />} /> */}
-        <Route path="summary" element={<Summary />} />
+        <Route path="menu" element={<Menu />}>
+          <Route path="summary" element={<Summary />} />
+        </Route>
       </Route>
     </>
   )
