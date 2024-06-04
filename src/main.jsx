@@ -9,7 +9,7 @@ import {
 
 import "./index.css";
 
-import Root from "./routes/Root";
+import WelcomePage from "./routes/WelcomePage";
 import Order from "./routes/orders/Order";
 import Menu from "./routes/orders/Menu";
 import Summary from "./routes/orders/Summary";
@@ -19,7 +19,7 @@ import ErrorPage from "./ErrorPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Root />} errorElement={<ErrorPage />} />
+      <Route path="/" element={<WelcomePage />} errorElement={<ErrorPage />} />
       <Route path="order" element={<Order />} errorElement={<ErrorPage />} >
         <Route path="menu" element={<Menu />}>
           <Route path="summary" element={<Summary />} />
