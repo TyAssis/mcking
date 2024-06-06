@@ -9,6 +9,8 @@ import {
 
 import "./index.css";
 
+import { addBurger, listOrder } from './routes/orders/localStorageRepository';
+
 import WelcomePage from "./routes/WelcomePage";
 import Order from "./routes/orders/Order";
 import Menu from "./routes/orders/Menu";
@@ -21,8 +23,8 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<WelcomePage />} errorElement={<ErrorPage />} />
       <Route path="order" element={<Order />} errorElement={<ErrorPage />} >
-        <Route path="menu" element={<Menu />}>
-          <Route path="summary" element={<Summary />} />
+        <Route path="menu" element={<Menu />} action={addBurger}>
+          <Route path="summary" element={<Summary />} loader={listOrder} />
         </Route>
       </Route>
     </>

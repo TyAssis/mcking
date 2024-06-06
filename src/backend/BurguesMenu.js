@@ -7,27 +7,27 @@ import bbqBurguer from '../assets/bbq_burger.jpg';
 export const burgers = [
   {
     name: 'Cheese Burger',
-    price: '$4.99',
+    price: '4.99',
     image: cheeseBurguer, 
   },
   {
     name: 'Classic Burger',
-    price: '$5.99',
+    price: '5.99',
     image: classicBurguer, 
   },
   {
     name: 'Bacon Burger',
-    price: '$7.99',
+    price: '7.99',
     image: baconBurguer,
   },
   {
     name: 'Veggie Burger',
-    price: '$5.49',
+    price: '5.49',
     image: veggieBurguer, 
   },
   {
     name: 'BBQ Burger',
-    price: '$8.99',
+    price: '8.99',
     image: bbqBurguer, 
   },
 ];
